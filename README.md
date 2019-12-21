@@ -3,10 +3,9 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|name|integer|null: false|
+|name|string|null: false|
 |email|integer|null: false|
 |password|integer|null: false|
-|grouns_users_id|integer|null: false, foreign_key: true|
 
 ### Association
 - has_many :groups_users
@@ -17,10 +16,7 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|name|integer|null: false|
-|comment_id|integer|null: false, foreign_key: true|
-|grouns_users_id|integer|null: false, foreign_key: true|
-
+|name|string|null: false|
 
 ### Association
 - has_many :groups_users
@@ -43,9 +39,10 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|text|text|null: false|
+|text|text||
 |image|text||
 |user_id|integer|null: false, foreign_key: true|
+|group_id|integer|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
