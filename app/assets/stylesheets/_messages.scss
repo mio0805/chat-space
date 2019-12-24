@@ -3,6 +3,7 @@
 }
 .wrappre {
   display: flex;
+
   .side-ber {
     background-color: #253141;
     width: 300px;
@@ -13,7 +14,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-
       &__top-items{
         display: block;
         width: 260px;
@@ -25,7 +25,6 @@
         font-weight: bold;
         &__name {
           }
-
         &__icons {
           width: 60px;
           text-align: right;
@@ -43,10 +42,10 @@
 
       }
     }
+
     .group{
       background-color: #2f3e51;
       height: calc(100vh - 100px);
-
       &__block{
         color: $mainWhiteColor;
         font-weight: bold;
@@ -76,7 +75,6 @@
       padding-left: 40px;
       display: flex;
       justify-content: space-between;
-
       &__left-box {
         &__title{
           color: #333333;
@@ -91,7 +89,6 @@
           margin-top: 15px;
         }
       }
-
       &__edit-btn {
         color: #38aed0;
         font-size: 16px;
@@ -131,6 +128,7 @@
         }
       }
     }
+
     .form {
       background-color: #d2d2d2;
       height: 90px;
@@ -138,6 +136,7 @@
 
       .new__message {
         display: flex;
+
         .input--box{
           width: 100%;
           display: flex;
@@ -160,6 +159,7 @@
             }
           }
         }
+        
         .submit_btn{
           width: 100px;
           height: 50px;
