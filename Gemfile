@@ -60,3 +60,6 @@ gem 'thor', '0.20.3'
 gem 'font-awesome-sass'
 
 gem 'devise'
+
+gem 'carrierwave'
+gem 'mini_magick'
