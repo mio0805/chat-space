@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
 }
-.wrappre {
+.wrapper {
   display: flex;
 
   .side-ber {
@@ -46,20 +46,23 @@
     .group{
       background-color: #2f3e51;
       height: calc(100vh - 100px);
+
       &__block{
-        color: $mainWhiteColor;
         font-weight: bold;
         padding-left: 20px;
         padding-top: 20px;
         padding-bottom: 40px;
-
+        a{
+          text-decoration: none;
+          color: $mainWhiteColor;
+        }
         &__title {
           font-size: 15px; 
-        }
+          }
         &__message {
           font-size: 11px;
           padding-top: 5px;
-        }
+          }
       }
     }
   }

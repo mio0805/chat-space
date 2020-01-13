@@ -4,14 +4,14 @@
       .header__top-items__name
         =current_user.name
       .header__top-items__icons
-        = link_to new_group_path(current_user), class: "header__top-items__icons__edit" do
+        = link_to new_group_path, class: "header__top-items__icons__edit" do
           = icon('fas', 'edit')
         = link_to edit_user_path(current_user), class: "header__top-items__icons__cog" do
           = icon('fas', 'cog', class: 'icon')
   .group
     -current_user.groups.each do |group|
       .group__block
-        = link_to '#' do
+        = link_to groups_path(group) do
           .group__block__title
             = group.name
           .group__block__message
