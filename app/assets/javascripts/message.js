@@ -52,10 +52,12 @@ $(function(){
       $('.messages').append(html);
       $('.messages').animate({ scrollTop: $('.messages')[0].scrollHeight});
       $('.input--box')[0].reset('');
-      $('.submit_btn').prop('disabled', false);
     })
     .fail(function(){
       alert("メッセージの送信に失敗しました");
     })
+    .always(function() {
+      $('.submit_btn').prop('disabled', false);
+    });
   });
 });
