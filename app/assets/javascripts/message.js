@@ -100,7 +100,7 @@ $(function(){
       }
     })
     .fail(function(){
-      console.log('error');
+      alert("メッセージの送信に失敗しました");
     });
   };
   if (document.location.href.match(/\/groups\/\d+\/messages/)) {
