@@ -14,7 +14,7 @@ class UsersController < ApplicationController
 
   def update
     if current_user.update(user_params)
-      redeirect_to root_path
+      redirect_to root_path
     else
      render :edit
     end
