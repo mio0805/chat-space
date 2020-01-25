@@ -72,10 +72,12 @@ li {
       padding-right: 20px;
       padding-left: 20px;
       box-sizing: border-box;
+      padding: 12px;
     }
     &--right {
       float: right;
       width: 70%;
+      padding: 10px 15px;
     }
   }
 }
